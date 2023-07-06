@@ -9,7 +9,7 @@ const renderLoop = () => {
     const currentTime = Date.now();
     const deltaTime = currentTime - lastRenderTime;
 
-    if (deltaTime >= 500) {
+    if (deltaTime >= 100) {
         pre.textContent = universe.render();
         universe.tick();
         lastRenderTime = currentTime;
